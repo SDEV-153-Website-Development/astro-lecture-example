@@ -1,4 +1,13 @@
 <style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
     a {
         color: #666;
         text-decoration: none;
@@ -9,18 +18,26 @@
         display: flex;
         gap: 16px;
     }
+
+    .logo-link {
+        font-size: 24px;
+        color: #000;
+    }
 </style>
 
-<nav>
-    <ul>
-        <li>
-            <a href="/astro-lecture-example">Home</a>
-        </li>
-        <li>
-            <a href="/astro-lecture-example/about">About Me</a>
-        </li>
-        <li>
-            <a href="#">Blog</a>
-        </li>
-    </ul>
-</nav>
+<header>
+    <a class="logo-link" aria-label="Go Home" href="/astro-lecture-example">Eric Sexton</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="/astro-lecture-example">Home</a>
+            </li>
+            <li>
+                <a href="/astro-lecture-example/about">About Me</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </nav>
+</header>

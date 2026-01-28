@@ -1,6 +1,42 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
+
+<style>
+  .hero {
+    background: purple;
+    height: 330px;
+  }
+</style>
+
 <Layout>
-	<h1>Eric Sexton</h1>
+  <div class="hero"></div>
+  <section>
+    <h2>Posts</h2>
+    <Card
+      title="How to create a website with astro?"
+      imgUrl="https://placehold.co/300x200"
+      tag="Technology"
+    >
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+        aperiam, distinctio, adipisci magni error, commodi expedita porro quidem
+        atque modi optio ullam totam saepe? Dolores vel porro quaerat fugiat
+        eos!
+      </p>
+    </Card>
+    <Card
+      title="Pork Tenderloin"
+      imgUrl="https://placehold.co/300x200"
+      tag="Cooking"
+    >
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+        aperiam, distinctio, adipisci magni error, commodi expedita porro quidem
+        atque modi optio ullam totam saepe? Dolores vel porro quaerat fugiat
+        eos!
+      </p>
+    </Card>
+  </section>
 </Layout>

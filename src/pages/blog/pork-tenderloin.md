@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/Layout.astro
+---
+
 # 🍖 Juicy Garlic-Herb Pork Tenderloin
 
 A simple, flavorful pork tenderloin that stays juicy and works great for weeknights *or* dinner guests.

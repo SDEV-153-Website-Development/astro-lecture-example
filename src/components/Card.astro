@@ -1,0 +1,12 @@
+---
+const { title, imgUrl, tag } = Astro.props;
+---
+
+<article class="card">
+    <img src={imgUrl} alt="">
+    <div class="tag-row">
+        <span>{tag}</span>
+    </div>
+    <h3>{title}</h3>
+    <slot />
+</article>
